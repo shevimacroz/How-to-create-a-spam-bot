@@ -1,0 +1,6 @@
+import pyautogui, time
+time.sleep(5)
+f = open("beemovie.txt", 'r')#please make sure to change the name of the text file if you are using a different text script.
+for word in f:
+    pyautogui.typewrite(word)
+    pyautogui.press("enter")
